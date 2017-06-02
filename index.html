@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="x5-page-mode" content="app">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="format-detection" content="telephone=no" />
+    <title>贺卡模板</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div id="fullpage">
+    <!--第一屏-->
+    <div class="section section1">
+        <!--图片上下滑动-->
+        <div class="tempshadetop">
+            <div class="jb"></div>
+            <div class="hudie"></div>
+            <div class="eng"></div>
+            <div class="yaoqing"></div>
+        </div>
+        <div class="tempshadebot"></div>
+        <!--底下图片-->
+        <div class="below">
+            <!--分块上中下-->
+            <div class="belowtop"></div>
+            <div class="belowcenter"></div>
+            <div class="belowbot"></div>
+            <!--图片-->
+            <div class="xi"></div>
+            <div class="index"></div>
+            <!--文字-->
+            <div class="username">
+                <span class="hubby">新郎</span>
+                <span class="wife">新娘</span>
+            </div>
+            <div class="time">2016.12.05 16:05</div>
+            <div class="localhost">南京白马公园景区</div>
+        </div>
+    </div>
+    <!--第二屏-->
+    <div class="section section2">
+        <div class="border"></div>
+        <div class="se2jiehun"></div>
+        <div class="long"></div>
+        <div class="feng"></div>
+        <div class="zhezhao">
+            <div class="border"></div>
+            <div class="img"></div>
+        </div>
+    </div>
+    <!--第三屏-->
+    <div class="section section3">
+        <div class="border"></div>
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+    </div>
+    <!--第四屏-->
+    <div class="section section4">
+        <div class="border"></div>
+        <div class="img4"></div>
+        <div class="img5"></div>
+        <div class="content">
+            洁白婚纱 手捧鲜花 我愿和你一起走完人生的童话我将珍惜我们的爱情无论 现在 将来 直至永远
+        </div>
+    </div>
+
+    <!--第五屏-->
+    <div class="section section5">
+        <div class="border"></div>
+        <div class="img4"></div>
+        <div class="border"></div>
+        <div class="se6time">2016.03.12 16:30</div>
+        <div class="se5nonglitime">农历 六月初五</div>
+        <div class="se5localhost">WEDDING ADDRES</div>
+        <div class="se5englocalhost">南京白马公园景区</div>
+        <div class="se5contact">CONTACT US</div>
+        <div class="se5touchlang">联系新郎</div>
+        <div class="se5touchliang">联系新娘</div>
+    </div>
+    <!--第六屏-->
+    <div class="section section6">
+        <div class="border"></div>
+        <div class="img4"></div>
+        <div class="se6zhufu">给我们最真诚美好的祝福</div>
+        <div class="se6message"> </div>
+        <!--<div class="but"></div>-->
+    </div>
+    <!--第七屏-->
+    <div class="section section7">
+        <div class="border"></div>
+        <div class="img4"></div>
+        <div class="se7welcom">WELCOME TO WEDDING</div>
+        <div class="se7name">姓名</div>
+        <div class="se7method">
+            <p class="jian"></p>
+            出席人数
+            <p class="jia"></p>
+
+        </div>
+        <div class="se7number">1人出席</div>
+        <div class="but">提交</div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script src="js/jquery.transit.js"></script>
+<script src="js/index.js"></script>
+<script>
+    function size(origins,type){
+        var type=type||"x";
+        var widths=document.documentElement.clientWidth;
+        var height=document.documentElement.clientHeight;
+        if(type=="x"){
+            var bili=widths/origins*100;
+            document.getElementsByTagName("html")[0].style.fontSize=bili+"px"
+        }else if(type=="y"){
+            var bili=height/origins*100;
+            document.getElementsByTagName("html")[0].style.fontSize=bili+"px"
+        }
+    }
+    size(640);
+</script>
+
+</html>
