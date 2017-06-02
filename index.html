@@ -5,8 +5,6 @@
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="x5-page-mode" content="app">
-    <meta name="x5-orientation" content="portrait">
     <meta name="format-detection" content="telephone=no" />
     <title>贺卡模板</title>
     <link rel="stylesheet" href="css/jquery.fullPage.css">
@@ -97,22 +95,22 @@
         <div class="img4"></div>
         <div class="se7welcom">WELCOME TO WEDDING</div>
         <div class="se7name">姓名</div>
-        <div class="se7method">
+        <div class="se7method">出席人数 </div>
+        <div class="se7number">
             <p class="jian"></p>
-            出席人数
+            1人出席
             <p class="jia"></p>
-
         </div>
-        <div class="se7number">1人出席</div>
         <div class="but">提交</div>
     </div>
 </div>
 
 </body>
 <script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
 <script src="js/jquery.fullPage.js"></script>
 <script src="js/jquery.transit.js"></script>
-<script src="js/index.js"></script>
+
 <script>
     function size(origins,type){
         var type=type||"x";
@@ -126,7 +124,13 @@
             document.getElementsByTagName("html")[0].style.fontSize=bili+"px"
         }
     }
-    size(640);
+    size(1138,"y");
+    var Height=document.documentElement.clientHeight
+    var Width=document.documentElement.clientWidth
+    $(".section").height(Height);
+    $(".section").Width(Width);
+
+
 </script>
 
 </html>
