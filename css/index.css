@@ -28,11 +28,12 @@ img {
 }
 
 .section{
+    width: 100%;
     position: relative;
     overflow: hidden;
 }
 
-/*上下滑动*/
+/*---上下滑动---*/
 .tempshadetop{
     position: absolute;
     top:0;
@@ -43,7 +44,11 @@ img {
     background-size:100% 100%;
     z-index: 10;
     position: relative;
-    /*border-bottom: 1px solid #fff;*/
+}
+.active .tempshadetop{
+    top:-80%;
+    transition: all 3s;
+    transition-delay: 2s;
 }
 .jb{
     position: absolute;
@@ -59,7 +64,10 @@ img {
     height: 3.38rem;
     position: absolute;
     top:1.5rem;
-    left: .55rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
     background: url(../img/hudie.png) no-repeat;
     background-size: 100% 100%;
 }
@@ -70,23 +78,26 @@ img {
     background-size: contain;
     position: absolute;
     top:5.6rem;
-    left:1.15rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+
 }
 .yaoqing{
     width:3rem;
     height: .5rem;
-    /*background: yellow;*/
+    background: yellow;
     background:url(../img/yaoqing.png)no-repeat;
     background-size: contain;
     position: absolute;
     top:6.3rem;
-    left:1.75rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
 }
-.active .tempshadetop{
-    top:-80%;
-    transition: all 3s;
-    transition-delay: 2s;
-}
+/*--上完--*/
 .tempshadebot{
     z-index: 9;
     position: absolute;
@@ -109,7 +120,6 @@ img {
     position: absolute;
     top:0;
     left:0;
-    /*background:red;*/
 }
 .belowtop{
     position: absolute;
@@ -121,7 +131,9 @@ img {
     width: 50%;
     height: 2.5rem;
     background:url(../img/1.png) no-repeat;
-    background-size:contain;
+    background-size: 100% 100%;
+    /*background-size: cover;*/
+    /*background-size:contain;*/
     opacity: 0;
 }
 .active .belowtop{
@@ -149,7 +161,7 @@ img {
     bottom: 0;
     left:0;
     width: 100%;
-    height: 4.96rem;
+    height: 4.98rem;
     background:url(../img/3.png);
     background-size: contain;
 }
@@ -184,15 +196,25 @@ img {
 
 .index{
     position: absolute;
-    width: 2.41rem;
-    height: 2.41rem;
+    width: 3rem;
+    height:2.2rem;
+    top:5.4rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
     /*background: yellow;*/
-    top:5.8rem;
-    left:2rem;
     background: url(../img/diceng.png)no-repeat;
-    background-size: 40% 40%;
-    background-size: contain;
+    /*background-size: contain;*/
+    background-size: 100% 100%;
+    opacity: 0;
 }
+.active .index{
+    opacity: 1;
+    transition: 4s;
+    transition-delay: 4s;
+}
+
 .active .username{
     width: 4.5rem;
     height: .7rem;
@@ -903,8 +925,7 @@ img {
     /*letter-spacing: .2rem;*/
     color: #f3c972;
     line-height: .5rem;
-    padding-left: .1rem;
-    padding-right: .1rem;
+
 }
 .active .se7method{
     bottom:-2rem;
@@ -937,6 +958,8 @@ img {
     letter-spacing: .2rem;
     color: #f3c972;
     line-height: .5rem;
+    padding-left: .1rem;
+    padding-right: .1rem;
 }
 .active .se7number{
     bottom:-4rem;
@@ -967,7 +990,7 @@ img {
     border-radius: .5rem;
     font-size: .33rem;
     color: #FEF7E1;
-    line-height: .53rem;
+    line-height: .55rem;
     letter-spacing: .2rem;
 }
 .active .but{
